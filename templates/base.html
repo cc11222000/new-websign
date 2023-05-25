@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Product example · Bootstrap v4.6</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/product/">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="/static/css/product.css" />
+    <link href = "{% static 'css/product.css' %}" rel="stylesheet" type="text/css"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">-->
+     
+    <!-- new Bootstrap core CSS -->
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+  
+      <!-- Custom styles for this template -->
+      <link href="/static/css/product.css" rel="stylesheet">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!--
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    -->
+    <!-- Image and text -->
+
+    <!--
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: #e3f2fd;">
+        <a class="navbar-brand">
+            <img src="https://www.ntue.edu.tw/var/file/0/1000/img/368/footlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            國北教大
+        </a>
+        <a class="navbar-brand" href="/">MySite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/std">Student <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Hello
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="/">Hello</a>
+                      <a class="dropdown-item" href="/hello1/aaa">Hello1</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/hello2/aaa">Hello2</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Students
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="/listone">listone</a>
+                      <a class="dropdown-item" href="/listall">listall</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/post">post</a>
+                      <a class="dropdown-item" href="/post1">post1</a>
+                      <a class="dropdown-item" href="/postform">postform</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-expanded="false">
+                      flower
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="/flower">flower</a>
+                      <a class="dropdown-item" href="/flower/create/">Create Flower</a>
+                      <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+            </ul>
+            <form action="/flower/" method="get" class="form-inline mt-2 mt-md-0">
+                <input id="q" name="q" value="{{ request.GET.q }}" class="form-control mr-sm-2" type="text" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    -->
+
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#" aria-label="Product">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="#">news</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">about</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">work</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">product</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">contact me</a>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <main role="main" class="container">
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    </main><!-- /.container -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/static/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
